@@ -9,23 +9,34 @@ import {
 	Route,
 } from "react-router-dom";
 import Header from './components/Header';
+import styled from 'styled-components'
+import Pun from './components/Pun';
+import Footer from './components/Footer';
 
 function App() {
 	return (
-		<div className="App">
+		<Page className="App">
 			<BrowserRouter>
-			<Header />
 
+				<Header />
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/puns" element={<Puns />} />
+					<Route path="/puns/:postID" element={<Pun />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/contact" element={<Contact />} />
 				</Routes>
+				<Footer />
+
 			</BrowserRouter>
-		</div>
+		</Page>
 		
 	);
 }
+
+const Page = styled.div`
+	min-width: 1100px;
+	background-color: #3B3E45;
+`;
 
 export default App;

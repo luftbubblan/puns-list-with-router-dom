@@ -1,9 +1,11 @@
 import React from 'react'
+import '../style.css';
 
 const Home = () => {
   return (
-    <div>
+    <div className='Wrapper'>
         <h2>Home</h2>
+        empty for now
     </div>
   )
 }
