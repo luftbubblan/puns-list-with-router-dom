@@ -11,10 +11,7 @@ const PunItem = ({pun}) => {
 }
     
 const LinkWrapper = styled.div`
-    margin-bottom: 50px;
-    :first-of-type {
-        margin-top: 30px;
-    }
+    padding: 25px 0;
 `;
 
 const PunLink = styled(Link)`
