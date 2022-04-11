@@ -12,6 +12,7 @@ import Header from './components/Header';
 import styled from 'styled-components'
 import Pun from './components/Pun';
 import Footer from './components/Footer';
+import NewPun from './pages/NewPun';
 
 function App() {
 	return (
@@ -25,6 +26,7 @@ function App() {
 					<Route path="/puns/:postID" element={<Pun />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/contact" element={<Contact />} />
+					<Route path="/newpun" element={<NewPun />} />
 				</Routes>
 				<Footer />
 
