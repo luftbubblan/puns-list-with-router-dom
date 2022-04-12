@@ -12,12 +12,11 @@ const NewPun = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        createNewPun();
-
+        POSTNewPunToAPI();
         setPun("");
     }
 
-    const createNewPun = async() => {
+    const POSTNewPunToAPI = async() => {
         try {
             const punObj = {
                 content: pun
@@ -49,7 +48,7 @@ const NewPun = () => {
                 <label>Pun content:</label>
                 <input type="text" name="pun" value={pun} onChange={handleChange} />
 
-                <button>Submit Pun</button>
+                <button >Submit Pun</button>
             </PunForm>
         </div>
     )
